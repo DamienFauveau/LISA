@@ -45,7 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Catalogue.cs" />
     <Compile Include="Entities\Client.cs" />
+    <Compile Include="Entities\Magasin.cs" />
+    <Compile Include="Entities\OperationCommerciale.cs" />
+    <Compile Include="Entities\Page.cs" />
+    <Compile Include="Entities\Produit.cs" />
+    <Compile Include="Entities\Salarie.cs" />
+    <Compile Include="Entities\TypeSalarie.cs" />
+    <Compile Include="Entities\Zone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
