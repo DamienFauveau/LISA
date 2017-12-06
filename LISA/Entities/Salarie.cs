@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class Salarie
+    public class Salarie
     {
         #region properties
 
@@ -43,7 +43,7 @@ namespace LISA.Entities
         /// <summary>
         /// Type du salarié
         /// </summary>
-        public TypeSalarie TypeSalarie { get; set; }
+        public virtual TypeSalarie TypeSalarie { get; set; }
         #endregion
     }
 }
