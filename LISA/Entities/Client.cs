@@ -38,6 +38,11 @@ namespace LISA.Entities
         /// Code postal de la ville du client
         /// </summary>
         public string CodePostal { get; set; }
+
+        /// <summary>
+        /// Liste des magasins auquel le client est abonné
+        /// </summary>
+        public List<Magasin> Magasins { get; set; }
         #endregion
     }
 }
