@@ -16,42 +16,42 @@ namespace LISA.Entities
         public int Id { get; }
 
         /// <summary>
-        /// Affecte ou obient le libelle
+        /// Affecte ou obtient le libelle
         /// </summary>
         public string Libelle { get; set; }
 
         /// <summary>
-        /// Affecte ou obient le type
+        /// Affecte ou obtient le type
         /// </summary>
         public string Type { get; set; }
 
         /// <summary>
-        /// Affecte ou obient le label
+        /// Affecte ou obtient le label
         /// </summary>
         public string Label{ get; set; }
 
         /// <summary>
-        /// Affecte ou obient la largeur
+        /// Affecte ou obtient la largeur
         /// </summary>
         public float witdh { get; set; }
 
         /// <summary>
-        /// Affecte ou obient la hauteur
+        /// Affecte ou obtient la hauteur
         /// </summary>
         public float height{ get; set; }
 
         /// <summary>
-        /// Affecte ou obient les pages
+        /// Affecte ou obtient les pages
         /// </summary>
         public List<Page> pages { get; set; }
 
         /// <summary>
-        /// Affecte ou obient l'opération commerciale
+        /// Affecte ou obtient l'opération commerciale
         /// </summary>
         public OperationCommerciale op { get; set; }
 
         /// <summary>
-        /// Affecte ou obient les magasins
+        /// Affecte ou obtient les magasins
         /// </summary>
         public List<Magasin> Magasins { get; set; }
         #endregion
