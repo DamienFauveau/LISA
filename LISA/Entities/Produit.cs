@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,6 +45,8 @@ namespace LISA.Entities
         public int ReductionEuro { get; set; }
 
         public int AvantageEuro { get; set; }
+
+        public IList Zones { get; set; }
         #endregion
     }
 }
