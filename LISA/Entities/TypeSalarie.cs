@@ -18,6 +18,11 @@ namespace LISA.Entities
         /// Libelle du type de salarié
         /// </summary>
         public string Libelle { get; set; }
+
+        /// <summary>
+        /// Liste des salariés de ce type
+        /// </summary>
+        public List<Salarie> Salaries { get; set; }
         #endregion
     }
 }

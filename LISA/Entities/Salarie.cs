@@ -39,6 +39,11 @@ namespace LISA.Entities
         /// Mot de passe du salarié
         /// </summary>
         public string Password { get; set; }
+
+        /// <summary>
+        /// Type du salarié
+        /// </summary>
+        public TypeSalarie TypeSalarie { get; set; }
         #endregion
     }
 }
