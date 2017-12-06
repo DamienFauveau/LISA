@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,51 @@ namespace LISA.Entities
 {
     class Catalogue
     {
+        #region Properties
+        /// <summary>
+        /// Obtient l'id
+        /// </summary>
+        public int Id { get; }
+
+        /// <summary>
+        /// Affecte ou obient le libelle
+        /// </summary>
+        public string Libelle { get; set; }
+
+        /// <summary>
+        /// Affecte ou obient le type
+        /// </summary>
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Affecte ou obient le label
+        /// </summary>
+        public string Label{ get; set; }
+
+        /// <summary>
+        /// Affecte ou obient la largeur
+        /// </summary>
+        public float witdh { get; set; }
+
+        /// <summary>
+        /// Affecte ou obient la hauteur
+        /// </summary>
+        public float height{ get; set; }
+
+        /// <summary>
+        /// Affecte ou obient les pages
+        /// </summary>
+        public List<Page> pages { get; set; }
+
+        /// <summary>
+        /// Affecte ou obient l'opération commerciale
+        /// </summary>
+        public OperationCommerciale op { get; set; }
+
+        /// <summary>
+        /// Affecte ou obient les magasins
+        /// </summary>
+        public List<Magasin> Magasins { get; set; }
+        #endregion
     }
 }
