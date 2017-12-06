@@ -7,112 +7,139 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class Produit
+    public class Produit : IComparable<Produit>
     {
         #region Properties
         /// <summary>
         /// Obtient l'id
         /// </summary>
-        public int Id { get; }
+        public virtual int Id { get; }
 
         /// <summary>
         /// Affecte ou obtient le code
         /// </summary>
-        public int Code { get; set; }
-        
+        public virtual int Code { get; set; }
+
         /// <summary>
         /// Affecte ou obtient le label
         /// </summary>
-        public string Label { get; set; }
-        
+        public virtual string Label { get; set; }
+
         /// <summary>
         /// Affecte ou obtient la description
         /// </summary>
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la categorie
         /// </summary>
-        public string Category { get; set; }
+        public virtual string Category { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le prix
         /// </summary>
-        public float Price { get; set; }
+        public virtual float Price { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la réduction en pourcent
         /// </summary>
-        public int ReductionPercent { get; set; }
+        public virtual int ReductionPercent { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'avantage en pourcent
         /// </summary>
-        public int AvantagePercent { get; set; }
+        public virtual int AvantagePercent { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'écotaxe
         /// </summary>
-        public int Ecotaxe { get; set; }
+        public virtual int Ecotaxe { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'image
         /// </summary>
-        public string Image { get; set; }
+        public virtual string Image { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le picto
         /// </summary>
-        public string Picto { get; set; }
+        public virtual string Picto { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'origine
         /// </summary>
-        public string Origin { get; set; }
+        public virtual string Origin { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la mention
         /// </summary>
-        public string Mention { get; set; }
+        public virtual string Mention { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le packaging
         /// </summary>
-        public string Packaging { get; set; }
+        public virtual string Packaging { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le lower price
         /// </summary>
-        public int Lowerprice { get; set; }
+        public virtual int Lowerprice { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la couleur
         /// </summary>
-        public string Color { get; set; }
+        public virtual string Color { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la réduction en euro
         /// </summary>
-        public int ReductionEuro { get; set; }
+        public virtual int ReductionEuro { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'avantage en euro
         /// </summary>
-        public int AvantageEuro { get; set; }
+        public virtual int AvantageEuro { get; set; }
 
         /// <summary>
         /// Affecte ou obtient les zones
         /// </summary>
-        public List<Zone> Zones { get; set; }
+        public virtual List<Zone> Zones { get; set; }
 
         /// <summary>
         /// Affecte ou obtient les pages
         /// </summary>
-        public List<Page> Pages { get; set; }
+        public virtual List<Page> Pages { get; set; }
         #endregion
 
-        #region methods
-            
+        #region Methods
+        /// <summary>
+        /// Calcul du HashCode de l'objet (ce qui le rend unique d'un point du vue métier)
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return (Code != 0) ? Code.GetHashCode() : 0;
+        }
+
+        /// <summary>
+        /// Surcharge de la méthode Equals afin que celle-ci se repose sur le calcul du HashCode
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            return GetHashCode().Equals(obj.GetHashCode());
+        }
+
+        /// <summary>
+        /// Implémentation de la méthode de comparaison de 2 objets entre eux
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public virtual int CompareTo(Produit other)
+        {
+            return GetHashCode().CompareTo(other.GetHashCode());
+        }
         #endregion
     }
 }

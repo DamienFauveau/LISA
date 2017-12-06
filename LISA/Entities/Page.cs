@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class Page
+    public class Page
     {
         #region properties
         /// <summary>
@@ -22,7 +22,7 @@ namespace LISA.Entities
         /// <summary>
         /// Liste des produits présents sur la page
         /// </summary>
-        public List<Produit> Products { get; set; }
+        public virtual List<Produit> Products { get; set; }
         #endregion
     }
 }

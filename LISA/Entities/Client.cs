@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class Client
+    public class Client
     {
         #region properties
         /// <summary>
@@ -42,7 +42,7 @@ namespace LISA.Entities
         /// <summary>
         /// Liste des magasins auquel le client est abonné
         /// </summary>
-        public List<Magasin> Magasins { get; set; }
+        public virtual List<Magasin> Magasins { get; set; }
         #endregion
     }
 }
