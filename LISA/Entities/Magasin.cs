@@ -28,6 +28,11 @@ namespace LISA.Entities
         /// Liste des clients enregistrés pour ce magasin
         /// </summary>
         public List<Client> Clients { get; set; }
+
+        /// <summary>
+        /// Liste des clients enregistrés pour ce magasin
+        /// </summary>
+        public List<Catalogue> Catalogues { get; set; }
         #endregion
     }
 }
