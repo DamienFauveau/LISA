@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISA", "LISA\LISA.csproj", "{733840A0-3109-4F16-824E-64D8DB76FA31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{E7D893ED-9C4C-4C57-8F7E-E8E3DBEDF566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{733840A0-3109-4F16-824E-64D8DB76FA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{733840A0-3109-4F16-824E-64D8DB76FA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{733840A0-3109-4F16-824E-64D8DB76FA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D893ED-9C4C-4C57-8F7E-E8E3DBEDF566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D893ED-9C4C-4C57-8F7E-E8E3DBEDF566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D893ED-9C4C-4C57-8F7E-E8E3DBEDF566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D893ED-9C4C-4C57-8F7E-E8E3DBEDF566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

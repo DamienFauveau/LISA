@@ -12,7 +12,7 @@ namespace LISA.Entities
         /// <summary>
         /// Obtient l'id
         /// </summary>
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le code
