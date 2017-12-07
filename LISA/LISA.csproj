@@ -57,7 +57,6 @@
     <Compile Include="Entities\Salarie.cs" />
     <Compile Include="Entities\TypeSalarie.cs" />
     <Compile Include="Entities\Zone.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
