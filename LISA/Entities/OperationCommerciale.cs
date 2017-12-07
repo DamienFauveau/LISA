@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class OperationCommerciale
+    public class OperationCommerciale
     {
         #region Properties
         /// <summary>
@@ -37,7 +37,7 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient les catalogues
         /// </summary>
-        public List<Catalogue> Catalogues { get; set; }
+        public virtual List<Catalogue> Catalogues { get; set; }
         #endregion
     }
 }

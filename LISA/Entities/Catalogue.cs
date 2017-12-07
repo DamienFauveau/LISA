@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    class Catalogue
+    public class Catalogue
     {
         #region Properties
         /// <summary>
@@ -43,7 +43,11 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient les pages
         /// </summary>
+<<<<<<< HEAD
         public List<Page> Pages { get; set; }
+=======
+        public virtual List<Page> pages { get; set; }
+>>>>>>> 658afbda13dd9d6d945cc22959e3b90f47562a7d
 
         /// <summary>
         /// Affecte ou obtient l'opération commerciale
@@ -53,7 +57,7 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient les magasins
         /// </summary>
-        public List<Magasin> Magasins { get; set; }
+        public virtual List<Magasin> Magasins { get; set; }
         #endregion
     }
 }
