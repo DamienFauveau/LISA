@@ -13,92 +13,92 @@ namespace LISA.Entities
         /// <summary>
         /// Obtient l'id
         /// </summary>
-        public virtual int Id { get; }
+        public int Id { get; }
 
         /// <summary>
         /// Affecte ou obtient le code
         /// </summary>
-        public virtual int Code { get; set; }
+        public int Code { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le label
         /// </summary>
-        public virtual string Label { get; set; }
+        public string Label { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la description
         /// </summary>
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la categorie
         /// </summary>
-        public virtual string Category { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le prix
         /// </summary>
-        public virtual float Price { get; set; }
+        public float Price { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la réduction en pourcent
         /// </summary>
-        public virtual int ReductionPercent { get; set; }
+        public int ReductionPercent { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'avantage en pourcent
         /// </summary>
-        public virtual int AvantagePercent { get; set; }
+        public int AvantagePercent { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'écotaxe
         /// </summary>
-        public virtual int Ecotaxe { get; set; }
+        public int Ecotaxe { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'image
         /// </summary>
-        public virtual string Image { get; set; }
+        public string Image { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le picto
         /// </summary>
-        public virtual string Picto { get; set; }
+        public string Picto { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'origine
         /// </summary>
-        public virtual string Origin { get; set; }
+        public string Origin { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la mention
         /// </summary>
-        public virtual string Mention { get; set; }
+        public string Mention { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le packaging
         /// </summary>
-        public virtual string Packaging { get; set; }
+        public string Packaging { get; set; }
 
         /// <summary>
         /// Affecte ou obtient le lower price
         /// </summary>
-        public virtual int Lowerprice { get; set; }
+        public int Lowerprice { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la couleur
         /// </summary>
-        public virtual string Color { get; set; }
+        public string Color { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la réduction en euro
         /// </summary>
-        public virtual int ReductionEuro { get; set; }
+        public int ReductionEuro { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'avantage en euro
         /// </summary>
-        public virtual int AvantageEuro { get; set; }
+        public int AvantageEuro { get; set; }
 
         /// <summary>
         /// Affecte ou obtient les zones

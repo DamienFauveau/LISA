@@ -48,7 +48,7 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient l'opération commerciale
         /// </summary>
-        public OperationCommerciale Op { get; set; }
+        public virtual OperationCommerciale Op { get; set; }
 
         /// <summary>
         /// Affecte ou obtient les magasins
