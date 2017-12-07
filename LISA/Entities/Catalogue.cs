@@ -33,22 +33,22 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient la largeur
         /// </summary>
-        public float witdh { get; set; }
+        public float Witdh { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la hauteur
         /// </summary>
-        public float height{ get; set; }
+        public float Height{ get; set; }
 
         /// <summary>
         /// Affecte ou obtient les pages
         /// </summary>
-        public List<Page> pages { get; set; }
+        public List<Page> Pages { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'opération commerciale
         /// </summary>
-        public OperationCommerciale op { get; set; }
+        public OperationCommerciale Op { get; set; }
 
         /// <summary>
         /// Affecte ou obtient les magasins
