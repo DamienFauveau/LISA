@@ -43,7 +43,7 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient les pages
         /// </summary>
-        public List<Page> Pages { get; set; }
+        public virtual List<Page> Pages { get; set; }
 
         /// <summary>
         /// Affecte ou obtient l'opération commerciale
