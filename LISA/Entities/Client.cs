@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    public class Client
+    public class Client : IEntity
     {
         #region properties
         /// <summary>

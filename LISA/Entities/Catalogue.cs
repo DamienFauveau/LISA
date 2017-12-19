@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    public class Catalogue
+    public class Catalogue : IEntity
     {
         #region Properties
         /// <summary>
