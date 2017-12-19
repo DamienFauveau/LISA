@@ -118,7 +118,7 @@ namespace LISA.Entities
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return (Code != 0) ? Code.GetHashCode() : 0;
+            return (Id != 0) ? Id.GetHashCode() : 0;
         }
 
         /// <summary>
