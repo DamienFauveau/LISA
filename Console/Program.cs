@@ -14,9 +14,9 @@ namespace ApplicationConsole
         static void Main(string[] args)
         {
             Dal<Client> clientDal = new Dal<Client>();
-            Client test = clientDal.findById(1);
+            Client test = clientDal.FindById(1);
             test.Email = "dsqdsqdsqd@hotmail.fr";
-            clientDal.update();
+            clientDal.Update();
         }
     }
 }

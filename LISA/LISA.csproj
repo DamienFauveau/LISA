@@ -56,8 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BddContext.cs" />
+    <Compile Include="DAL\Dal.cs" />
     <Compile Include="Entities\Catalogue.cs" />
     <Compile Include="Entities\Client.cs" />
+    <Compile Include="Entities\IEntity.cs" />
     <Compile Include="Entities\Magasin.cs" />
     <Compile Include="Entities\OperationCommerciale.cs" />
     <Compile Include="Entities\Page.cs" />
@@ -74,8 +76,6 @@
   <ItemGroup>
     <Content Include="Tools.Entity.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
