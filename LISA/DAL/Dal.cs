@@ -39,11 +39,11 @@ namespace LISA.DAL
             bdd.SaveChanges();
         }
 
-        public void Update()
-        {
+        public void Update(T obj)
+        { 
+            bdd.Entry(obj).State = EntityState.Modified;
             bdd.SaveChanges();
         }
-
 
     }
 }
