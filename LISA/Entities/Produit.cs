@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LISA.Entities
 {
-    public class Produit : IComparable<Produit>
+    public class Produit : IComparable<Produit>, IEntity
     {
         #region Properties
         /// <summary>

@@ -4,17 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LISA.DAL;
+using LISA.Entities;
 
-namespace Console
+namespace ApplicationConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using(BddContext context = new BddContext())
-            {
-                context.Database.CreateIfNotExists();
-            }
+            Dal<Client> clientDal = new Dal<Client>();
+            Client test = clientDal.findById(1);
+            test.Email = "dsqdsqdsqd@hotmail.fr";
+            clientDal.update();
         }
     }
 }
