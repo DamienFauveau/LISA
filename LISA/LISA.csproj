@@ -67,6 +67,19 @@
     <Compile Include="Entities\Salarie.cs" />
     <Compile Include="Entities\TypeSalarie.cs" />
     <Compile Include="Entities\Zone.cs" />
+    <Compile Include="Migrations\201712071351539_InitialCreate.cs" />
+    <Compile Include="Migrations\201712071351539_InitialCreate.Designer.cs">
+      <DependentUpon>201712071351539_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712191041519_RenommerColonneCatalogue.cs" />
+    <Compile Include="Migrations\201712191041519_RenommerColonneCatalogue.Designer.cs">
+      <DependentUpon>201712191041519_RenommerColonneCatalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712191047538_RenommerColonneCatalogue2.cs" />
+    <Compile Include="Migrations\201712191047538_RenommerColonneCatalogue2.Designer.cs">
+      <DependentUpon>201712191047538_RenommerColonneCatalogue2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +89,16 @@
   <ItemGroup>
     <Content Include="Tools.Entity.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712071351539_InitialCreate.resx">
+      <DependentUpon>201712071351539_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712191041519_RenommerColonneCatalogue.resx">
+      <DependentUpon>201712191041519_RenommerColonneCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712191047538_RenommerColonneCatalogue2.resx">
+      <DependentUpon>201712191047538_RenommerColonneCatalogue2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,10 +13,12 @@ namespace ApplicationConsole
     {
         static void Main(string[] args)
         {
-            Dal<Client> clientDal = new Dal<Client>();
-            Client test = clientDal.findById(1);
-            test.Email = "dsqdsqdsqd@hotmail.fr";
-            clientDal.update();
+            Dal<Catalogue> catalogueDal = new Dal<Catalogue>();
+            Catalogue test = catalogueDal.FindById(1);
+            Console.WriteLine(test.Width);
+            Console.ReadKey(); 
+            //test.Label = "Test update";
+            //catalogueDal.Update(test);
         }
     }
 }
