@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BddContext.cs" />
+    <Compile Include="DAL\MagasinDAL.cs" />
     <Compile Include="Entities\Catalogue.cs" />
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Magasin.cs" />
