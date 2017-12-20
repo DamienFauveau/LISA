@@ -5,6 +5,7 @@
 
 */App.Config
 */Web.Config
+Migrations/*
 
 # User-specific files
 *.suo
