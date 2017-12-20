@@ -149,10 +149,27 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CataloguesController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MagasinsController.cs" />
+    <Compile Include="Controllers\OperationCommercialesController.cs" />
+    <Compile Include="Controllers\PagesController.cs" />
+    <Compile Include="Controllers\ProduitsController.cs" />
+    <Compile Include="Controllers\SalariesController.cs" />
+    <Compile Include="Controllers\TypeSalariesController.cs" />
+    <Compile Include="Controllers\ZonesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CatalogueVM.cs" />
+    <Compile Include="Models\ClientVM.cs" />
+    <Compile Include="Models\MagasinVM.cs" />
+    <Compile Include="Models\OperationCommercialeVM.cs" />
+    <Compile Include="Models\PageVM.cs" />
+    <Compile Include="Models\ProduitVM.cs" />
+    <Compile Include="Models\SalarieVM.cs" />
+    <Compile Include="Models\TypeSalarieVM.cs" />
+    <Compile Include="Models\ZoneVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -197,10 +214,49 @@
     <Content Include="Views\Catalogues\Details.cshtml" />
     <Content Include="Views\Catalogues\Edit.cshtml" />
     <Content Include="Views\Catalogues\Index.cshtml" />
+    <Content Include="Views\Clients\Create.cshtml" />
+    <Content Include="Views\Clients\Delete.cshtml" />
+    <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\Edit.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Magasins\Create.cshtml" />
+    <Content Include="Views\Magasins\Delete.cshtml" />
+    <Content Include="Views\Magasins\Details.cshtml" />
+    <Content Include="Views\Magasins\Edit.cshtml" />
+    <Content Include="Views\Magasins\Index.cshtml" />
+    <Content Include="Views\OperationCommerciales\Create.cshtml" />
+    <Content Include="Views\OperationCommerciales\Delete.cshtml" />
+    <Content Include="Views\OperationCommerciales\Details.cshtml" />
+    <Content Include="Views\OperationCommerciales\Edit.cshtml" />
+    <Content Include="Views\OperationCommerciales\Index.cshtml" />
+    <Content Include="Views\Pages\Create.cshtml" />
+    <Content Include="Views\Pages\Delete.cshtml" />
+    <Content Include="Views\Pages\Details.cshtml" />
+    <Content Include="Views\Pages\Edit.cshtml" />
+    <Content Include="Views\Pages\Index.cshtml" />
+    <Content Include="Views\Produits\Create.cshtml" />
+    <Content Include="Views\Produits\Delete.cshtml" />
+    <Content Include="Views\Produits\Details.cshtml" />
+    <Content Include="Views\Produits\Edit.cshtml" />
+    <Content Include="Views\Produits\Index.cshtml" />
+    <Content Include="Views\Salaries\Create.cshtml" />
+    <Content Include="Views\Salaries\Delete.cshtml" />
+    <Content Include="Views\Salaries\Details.cshtml" />
+    <Content Include="Views\Salaries\Edit.cshtml" />
+    <Content Include="Views\Salaries\Index.cshtml" />
+    <Content Include="Views\TypeSalaries\Create.cshtml" />
+    <Content Include="Views\TypeSalaries\Delete.cshtml" />
+    <Content Include="Views\TypeSalaries\Details.cshtml" />
+    <Content Include="Views\TypeSalaries\Edit.cshtml" />
+    <Content Include="Views\TypeSalaries\Index.cshtml" />
+    <Content Include="Views\Zones\Create.cshtml" />
+    <Content Include="Views\Zones\Delete.cshtml" />
+    <Content Include="Views\Zones\Details.cshtml" />
+    <Content Include="Views\Zones\Edit.cshtml" />
+    <Content Include="Views\Zones\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
