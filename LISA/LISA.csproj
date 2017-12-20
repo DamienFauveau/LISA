@@ -70,38 +70,6 @@
     <Compile Include="Entities\Salarie.cs" />
     <Compile Include="Entities\TypeSalarie.cs" />
     <Compile Include="Entities\Zone.cs" />
-    <Compile Include="Migrations\201712071351539_InitialCreate.cs" />
-    <Compile Include="Migrations\201712071351539_InitialCreate.Designer.cs">
-      <DependentUpon>201712071351539_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191047538_RenommerColonneCatalogue2.cs" />
-    <Compile Include="Migrations\201712191047538_RenommerColonneCatalogue2.Designer.cs">
-      <DependentUpon>201712191047538_RenommerColonneCatalogue2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191433278_ChangementSalarieEmailUnique.cs" />
-    <Compile Include="Migrations\201712191433278_ChangementSalarieEmailUnique.Designer.cs">
-      <DependentUpon>201712191433278_ChangementSalarieEmailUnique.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191437165_ChangementSalarieRequired.cs" />
-    <Compile Include="Migrations\201712191437165_ChangementSalarieRequired.Designer.cs">
-      <DependentUpon>201712191437165_ChangementSalarieRequired.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712200918529_AjoutSalarieToken.cs" />
-    <Compile Include="Migrations\201712200918529_AjoutSalarieToken.Designer.cs">
-      <DependentUpon>201712200918529_AjoutSalarieToken.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712200942396_AjoutSalarieIgnoreJSONPassword.cs" />
-    <Compile Include="Migrations\201712200942396_AjoutSalarieIgnoreJSONPassword.Designer.cs">
-      <DependentUpon>201712200942396_AjoutSalarieIgnoreJSONPassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712201040521_AjoutSalarieTokenExpirationDate.cs" />
-    <Compile Include="Migrations\201712201040521_AjoutSalarieTokenExpirationDate.Designer.cs">
-      <DependentUpon>201712201040521_AjoutSalarieTokenExpirationDate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712201043463_AjoutSalarieTokenExpirationDate2.cs" />
-    <Compile Include="Migrations\201712201043463_AjoutSalarieTokenExpirationDate2.Designer.cs">
-      <DependentUpon>201712201043463_AjoutSalarieTokenExpirationDate2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\EncodeMD5.cs" />
@@ -113,31 +81,6 @@
   <ItemGroup>
     <Content Include="Tools.Entity.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712071351539_InitialCreate.resx">
-      <DependentUpon>201712071351539_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191047538_RenommerColonneCatalogue2.resx">
-      <DependentUpon>201712191047538_RenommerColonneCatalogue2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191433278_ChangementSalarieEmailUnique.resx">
-      <DependentUpon>201712191433278_ChangementSalarieEmailUnique.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191437165_ChangementSalarieRequired.resx">
-      <DependentUpon>201712191437165_ChangementSalarieRequired.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712200918529_AjoutSalarieToken.resx">
-      <DependentUpon>201712200918529_AjoutSalarieToken.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712200942396_AjoutSalarieIgnoreJSONPassword.resx">
-      <DependentUpon>201712200942396_AjoutSalarieIgnoreJSONPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712201040521_AjoutSalarieTokenExpirationDate.resx">
-      <DependentUpon>201712201040521_AjoutSalarieTokenExpirationDate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712201043463_AjoutSalarieTokenExpirationDate2.resx">
-      <DependentUpon>201712201043463_AjoutSalarieTokenExpirationDate2.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
