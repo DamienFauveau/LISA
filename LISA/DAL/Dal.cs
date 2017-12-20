@@ -24,7 +24,7 @@ namespace LISA.DAL
 
         public T FindById(int id)
         {
-            return bdd.Set<T>().First(obj => obj.Id == id);
+            return bdd.Set<T>().SingleOrDefault(obj => obj.Id == id);
         }
 
         public void Creer(T obj)

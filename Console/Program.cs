@@ -13,12 +13,15 @@ namespace ApplicationConsole
     {
         static void Main(string[] args)
         {
-            Dal<Catalogue> catalogueDal = new Dal<Catalogue>();
-            Catalogue test = catalogueDal.FindById(1);
-            Console.WriteLine(test.Width);
-            Console.ReadKey(); 
-            //test.Label = "Test update";
-            //catalogueDal.Update(test);
+            bool connexion = false;
+            do
+            {
+                SalarieDal dal = new SalarieDal();
+                Console.WriteLine("Mot de passe: ");
+                string motDePasse = Console.ReadLine();
+                connexion = dal.Connexion("dylan.alizon@gmail.com", motDePasse);
+                Console.WriteLine(connexion);
+            } while (connexion == false);
         }
     }
 }

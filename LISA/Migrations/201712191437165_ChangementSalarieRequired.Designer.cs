@@ -7,13 +7,13 @@ namespace LISA.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class RenommerColonneCatalogue : IMigrationMetadata
+    public sealed partial class ChangementSalarieRequired : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RenommerColonneCatalogue));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangementSalarieRequired));
         
         string IMigrationMetadata.Id
         {
-            get { return "201712191041519_RenommerColonneCatalogue"; }
+            get { return "201712191437165_ChangementSalarieRequired"; }
         }
         
         string IMigrationMetadata.Source
