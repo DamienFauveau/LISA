@@ -1,0 +1,129 @@
+﻿@model IEnumerable<LISA.Entities.Produit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Label)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReductionPercent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvantagePercent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ecotaxe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mention)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Packaging)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lowerprice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReductionEuro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvantageEuro)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Label)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReductionPercent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvantagePercent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ecotaxe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mention)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Packaging)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lowerprice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReductionEuro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvantageEuro)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
