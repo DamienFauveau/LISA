@@ -92,7 +92,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\CatalogueController.cs" />
+    <Compile Include="Attributes\TokenVerificationAttribute.cs" />
+    <Compile Include="Controllers\CataloguesController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\MagasinsController.cs" />
+    <Compile Include="Controllers\OperationsCommercialesController.cs" />
+    <Compile Include="Controllers\PagesController.cs" />
+    <Compile Include="Controllers\ProduitsController.cs" />
+    <Compile Include="Controllers\SalariesController.cs" />
+    <Compile Include="Controllers\TypesSalariesController.cs" />
+    <Compile Include="Controllers\ZonesController.cs" />
+    <Compile Include="DTO\LoginDTO.cs" />
+    <Compile Include="DTO\TokenDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

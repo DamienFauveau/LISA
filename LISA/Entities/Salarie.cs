@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace LISA.Entities
 {
     public class Salarie : IEntity
     {
         #region properties
-
         /// <summary>
         /// Id associé au salarié
         /// </summary>
@@ -28,6 +26,9 @@ namespace LISA.Entities
         /// <summary>
         /// Email du salarié
         /// </summary>
+        [Index(IsUnique = true)]
+        [MaxLength(255)]
+        [Required]
         public string Email { get; set; }
 
         /// <summary>
@@ -38,12 +39,27 @@ namespace LISA.Entities
         /// <summary>
         /// Mot de passe du salarié
         /// </summary>
+        [Required]
+        [IgnoreDataMember]
         public string Password { get; set; }
 
         /// <summary>
         /// Type du salarié
         /// </summary>
         public virtual TypeSalarie TypeSalarie { get; set; }
+
+        /// <summary>
+        /// Token authentification
+        /// </summary>
+        [IgnoreDataMember]
+        public string Token { get; set; }
+
+        /// <summary>
+        /// Date expiration du token
+        /// </summary>
+        [IgnoreDataMember]
+        [Column("Token_Expiration_Date")]
+        public DateTime TokenExpirationDate { get; set; }
         #endregion
 
         #region Methods
