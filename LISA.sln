@@ -9,11 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationConsole", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{6B990595-4CA1-4A1B-8353-BAF481550FD0}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackOffice", "BackOffice\BackOffice.csproj", "{45F85F70-EC3F-42DC-A105-7C2E516CC14F}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackOffice", "BackOffice\BackOffice.csproj", "{59BCB7CD-706C-44C4-AB41-1B53746FC621}"
->>>>>>> 1a0488072280c1ebc6557e007168115fda97ff38
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,17 +29,10 @@ Global
 		{6B990595-4CA1-4A1B-8353-BAF481550FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B990595-4CA1-4A1B-8353-BAF481550FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B990595-4CA1-4A1B-8353-BAF481550FD0}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{45F85F70-EC3F-42DC-A105-7C2E516CC14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45F85F70-EC3F-42DC-A105-7C2E516CC14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F85F70-EC3F-42DC-A105-7C2E516CC14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F85F70-EC3F-42DC-A105-7C2E516CC14F}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{59BCB7CD-706C-44C4-AB41-1B53746FC621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59BCB7CD-706C-44C4-AB41-1B53746FC621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59BCB7CD-706C-44C4-AB41-1B53746FC621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59BCB7CD-706C-44C4-AB41-1B53746FC621}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 1a0488072280c1ebc6557e007168115fda97ff38
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
