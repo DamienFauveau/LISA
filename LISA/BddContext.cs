@@ -22,5 +22,7 @@ namespace LISA
         public DbSet<Produit> Produits { get; set; }
         public DbSet<TypeSalarie> TypesSalaries { get; set; }
         public DbSet<Zone> Zones { get; set; }
+
+        public System.Data.Entity.DbSet<LISA.Entities.Salarie> Salaries { get; set; }
     }
 }
