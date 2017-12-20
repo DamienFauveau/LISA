@@ -29,7 +29,7 @@ namespace LISA.Entities
         /// <summary>
         /// Affecte ou obtient la largeur
         /// </summary>
-        public float Witdh { get; set; }
+        public float Width { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la hauteur
