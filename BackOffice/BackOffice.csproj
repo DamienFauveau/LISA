@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{59BCB7CD-706C-44C4-AB41-1B53746FC621}</ProjectGuid>
+    <ProjectGuid>{45F85F70-EC3F-42DC-A105-7C2E516CC14F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -191,6 +191,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+<<<<<<< HEAD
+=======
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+>>>>>>> b73de79962cc2f6be47002a7a3ef2ff7dc8112de
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -254,8 +260,11 @@
     <Content Include="Views\Zones\Details.cshtml" />
     <Content Include="Views\Zones\Edit.cshtml" />
     <Content Include="Views\Zones\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Login\Connexion.cshtml" />
     <Content Include="Web.config" />
+=======
+>>>>>>> b73de79962cc2f6be47002a7a3ef2ff7dc8112de
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
