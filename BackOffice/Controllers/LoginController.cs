@@ -20,7 +20,7 @@ namespace BackOffice.Controllers
         {
             return View();
         }
-
+        /*
         [Route("Connexion")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -39,5 +39,6 @@ namespace BackOffice.Controllers
             }
             return View(connexion);
         }
+        */
     }
 }
