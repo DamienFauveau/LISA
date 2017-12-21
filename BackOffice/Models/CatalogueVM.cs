@@ -31,7 +31,7 @@ namespace BackOffice.Models
         /// <summary>
         /// Affecte ou obtient la largeur
         /// </summary>
-        public float Witdh { get; set; }
+        public float Width { get; set; }
 
         /// <summary>
         /// Affecte ou obtient la hauteur

@@ -8,6 +8,12 @@ using System.Web;
 using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using BackOffice.Models;
+using System.Web.Script.Serialization;
+using System.Web.Configuration;
 
 namespace BackOffice.Controllers
 {
@@ -15,10 +21,26 @@ namespace BackOffice.Controllers
     {
         private BddContext db = new BddContext();
 
+        public List<CatalogueVM> GetCatalogueAsync()
+        {
+            HttpClient client = new HttpClient();
+            List<CatalogueVM> catalogues = new List<CatalogueVM>();
+
+            HttpResponseMessage response = client.GetAsync("http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Catalogues", HttpCompletionOption.ResponseHeadersRead).Result;
+            
+            if(response.IsSuccessStatusCode)
+            {
+                string responseBody = response.Content.ReadAsStringAsync().Result;
+                catalogues = JsonConvert.DeserializeObject<List<CatalogueVM>>(responseBody);
+            }
+            
+            return catalogues;
+        }
+
         // GET: Catalogues
         public ActionResult Index()
         {
-            return View(db.Catalogues.ToList());
+            return View(GetCatalogueAsync());
         }
 
         // GET: Catalogues/Details/5
