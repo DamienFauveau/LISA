@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,6 +11,7 @@ namespace API
         public static void Register(HttpConfiguration config)
         {
             // Configuration et services API Web
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
@@ -19,6 +21,7 @@ namespace API
                 routeTemplate: "{token}/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            
         }
     }
 }

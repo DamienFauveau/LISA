@@ -59,6 +59,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -151,6 +154,7 @@
     <Compile Include="Controllers\CataloguesController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MagasinsController.cs" />
     <Compile Include="Controllers\OperationCommercialesController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
@@ -163,14 +167,17 @@
     </Compile>
     <Compile Include="Models\CatalogueVM.cs" />
     <Compile Include="Models\ClientVM.cs" />
+    <Compile Include="Models\LoginVM.cs" />
     <Compile Include="Models\MagasinVM.cs" />
     <Compile Include="Models\OperationCommercialeVM.cs" />
     <Compile Include="Models\PageVM.cs" />
     <Compile Include="Models\ProduitVM.cs" />
     <Compile Include="Models\SalarieVM.cs" />
+    <Compile Include="Models\TokenVM.cs" />
     <Compile Include="Models\TypeSalarieVM.cs" />
     <Compile Include="Models\ZoneVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\HttpClientService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -184,7 +191,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -248,9 +254,8 @@
     <Content Include="Views\Zones\Details.cshtml" />
     <Content Include="Views\Zones\Edit.cshtml" />
     <Content Include="Views\Zones\Index.cshtml" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Views\Login\Connexion.cshtml" />
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
