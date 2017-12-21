@@ -20,7 +20,7 @@ namespace BackOffice.Controllers
         public ActionResult Index()
         {
             ClientVM client = new ClientVM();
-            return View(Service.HttpClientService<ClientVM>.Get(client, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Clients"));
+            return View(Service.HttpClientService<ClientVM>.Get(client, "http://localhost:53334/" + Session["token"] + "/Clients"));
         }
 
         // GET: Clients/Details/5
