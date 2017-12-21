@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using BackOffice.Models;
 using System.Web.Script.Serialization;
 using System.Web.Configuration;
+using BackOffice.Attributes;
 
 namespace BackOffice.Controllers
 {
@@ -38,6 +39,7 @@ namespace BackOffice.Controllers
         }
 
         // GET: Catalogues
+        [ConnexionVerification]
         public ActionResult Index()
         {
             return View(GetCatalogueAsync());

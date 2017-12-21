@@ -151,6 +151,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Attributes\ConnexionVerificationAttribute.cs" />
     <Compile Include="Controllers\CataloguesController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -191,12 +192,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-<<<<<<< HEAD
-=======
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
->>>>>>> b73de79962cc2f6be47002a7a3ef2ff7dc8112de
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -260,11 +258,8 @@
     <Content Include="Views\Zones\Details.cshtml" />
     <Content Include="Views\Zones\Edit.cshtml" />
     <Content Include="Views\Zones\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Login\Connexion.cshtml" />
     <Content Include="Web.config" />
-=======
->>>>>>> b73de79962cc2f6be47002a7a3ef2ff7dc8112de
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
