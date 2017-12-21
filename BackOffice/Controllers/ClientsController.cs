@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
+using BackOffice.Models;
 
 namespace BackOffice.Controllers
 {
@@ -18,7 +19,8 @@ namespace BackOffice.Controllers
         // GET: Clients
         public ActionResult Index()
         {
-            return View(db.Clients.ToList());
+            ClientVM client = new ClientVM();
+            return View(Service.HttpClientService<ClientVM>.Get(client, "http://localhost:53334/" + Session["token"] + "/Clients"));
         }
 
         // GET: Clients/Details/5

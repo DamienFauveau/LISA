@@ -1,7 +1,7 @@
-﻿@model IEnumerable<LISA.Entities.Salarie>
+﻿@model IEnumerable<BackOffice.Models.SalarieVM>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Index";    
 }
 
 <h2>Index</h2>
@@ -23,9 +23,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Telephone)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
         <th></th>
     </tr>
 
@@ -42,9 +39,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Telephone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

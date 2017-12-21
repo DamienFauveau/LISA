@@ -21,28 +21,13 @@ namespace BackOffice.Controllers
     public class CataloguesController : Controller
     {
         private BddContext db = new BddContext();
-
-        public List<CatalogueVM> GetCatalogueAsync()
-        {
-            HttpClient client = new HttpClient();
-            List<CatalogueVM> catalogues = new List<CatalogueVM>();
-
-            HttpResponseMessage response = client.GetAsync("http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Catalogues", HttpCompletionOption.ResponseHeadersRead).Result;
-            
-            if(response.IsSuccessStatusCode)
-            {
-                string responseBody = response.Content.ReadAsStringAsync().Result;
-                catalogues = JsonConvert.DeserializeObject<List<CatalogueVM>>(responseBody);
-            }
-            
-            return catalogues;
-        }
-
+        
         // GET: Catalogues
         [ConnexionVerification]
         public ActionResult Index()
         {
-            return View(GetCatalogueAsync());
+            CatalogueVM catalogue = new CatalogueVM();
+            return View(Service.HttpClientService<CatalogueVM>.Get(catalogue, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Catalogues"));
         }
 
         // GET: Catalogues/Details/5

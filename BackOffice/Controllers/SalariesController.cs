@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
+using BackOffice.Models;
 
 namespace BackOffice.Controllers
 {
@@ -18,7 +19,8 @@ namespace BackOffice.Controllers
         // GET: Salaries
         public ActionResult Index()
         {
-            return View(db.Salaries.ToList());
+            SalarieVM salarie = new SalarieVM();
+            return View(Service.HttpClientService<SalarieVM>.Get(salarie, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Salaries"));
         }
 
         // GET: Salaries/Details/5

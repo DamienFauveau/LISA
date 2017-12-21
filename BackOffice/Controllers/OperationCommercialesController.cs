@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
+using BackOffice.Models;
 
 namespace BackOffice.Controllers
 {
@@ -18,7 +19,8 @@ namespace BackOffice.Controllers
         // GET: OperationCommerciales
         public ActionResult Index()
         {
-            return View(db.OperationsCommerciales.ToList());
+            OperationCommercialeVM opComerciale = new OperationCommercialeVM();
+            return View(Service.HttpClientService<OperationCommercialeVM>.Get(opComerciale, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/OperationCommerciales"));
         }
 
         // GET: OperationCommerciales/Details/5

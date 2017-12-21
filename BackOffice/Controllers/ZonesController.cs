@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
+using BackOffice.Models;
 
 namespace BackOffice.Controllers
 {
@@ -18,7 +19,8 @@ namespace BackOffice.Controllers
         // GET: Zones
         public ActionResult Index()
         {
-            return View(db.Zones.ToList());
+            ZoneVM zone = new ZoneVM();
+            return View(Service.HttpClientService<ZoneVM>.Get(zone, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Zones"));
         }
 
         // GET: Zones/Details/5

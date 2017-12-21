@@ -1,4 +1,5 @@
 ﻿using BackOffice.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,38 @@ using System.Web;
 
 namespace BackOffice.Service
 {
-    public class HttpClientService
+    public class HttpClientService<T>
     {
+        private static HttpClient client;
+
+        public static HttpClient Client
+        {
+            get
+            {
+                if(client == null)
+                {
+                    client = new HttpClient();
+                }
+
+                return client;
+            }
+        }
+
+        public static List<T> Get(T obj, string url)
+        {
+            List<T> objs = new List<T>();
+
+            HttpResponseMessage response = Client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                string responseBody = response.Content.ReadAsStringAsync().Result;
+                objs = JsonConvert.DeserializeObject<List<T>>(responseBody);
+            }
+
+            return objs;
+        }
+
         public static string Connexion(LoginVM connexion)
         {
             string responseBody = "";
