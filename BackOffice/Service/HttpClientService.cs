@@ -10,7 +10,7 @@ using System.Web;
 
 namespace BackOffice.Service
 {
-    public class HttpClientService<T>
+    public class HttpClientService
     {
         private static HttpClient client;
 
@@ -27,7 +27,7 @@ namespace BackOffice.Service
             }
         }
 
-        public static List<T> Get(T obj, string url)
+        public static List<T> Get<T>(T obj, string url)
         {
             List<T> objs = new List<T>();
 

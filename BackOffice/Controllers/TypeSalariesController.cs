@@ -9,9 +9,11 @@ using System.Web.Mvc;
 using LISA;
 using LISA.Entities;
 using BackOffice.Models;
+using BackOffice.Attributes;
 
 namespace BackOffice.Controllers
 {
+    [ConnexionVerification]
     public class TypeSalariesController : Controller
     {
         private BddContext db = new BddContext();
@@ -20,7 +22,7 @@ namespace BackOffice.Controllers
         public ActionResult Index()
         {
             TypeSalarieVM typeSalarie = new TypeSalarieVM();
-            return View(Service.HttpClientService<TypeSalarieVM>.Get(typeSalarie, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/TypeSalaries"));
+            return View(Service.HttpClientService.Get<TypeSalarieVM>(typeSalarie, "http://localhost:53334/" + Session["token"] + "/TypeSalaries"));
         }
 
         // GET: TypeSalaries/Details/5

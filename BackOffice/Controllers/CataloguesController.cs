@@ -18,16 +18,16 @@ using BackOffice.Attributes;
 
 namespace BackOffice.Controllers
 {
+    [ConnexionVerification]
     public class CataloguesController : Controller
     {
         private BddContext db = new BddContext();
         
         // GET: Catalogues
-        [ConnexionVerification]
         public ActionResult Index()
         {
             CatalogueVM catalogue = new CatalogueVM();
-            return View(Service.HttpClientService<CatalogueVM>.Get(catalogue, "http://localhost:53334/23824c437c1a275f5f6fcf40667faf01/Catalogues"));
+            return View(Service.HttpClientService.Get<CatalogueVM>(catalogue, "http://localhost:53334/" + Session["token"] + "/Catalogues"));
         }
 
         // GET: Catalogues/Details/5
